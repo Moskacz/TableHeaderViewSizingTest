@@ -19,6 +19,12 @@ class ViewController: UIViewController {
 
     private func setupTableView() {
         tableView?.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView?.tableHeaderView = HeaderView.createView()
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        tableView?.tableHeaderView?.sizeToFit()
     }
 }
 

@@ -25,7 +25,17 @@ class HeaderView: UIView {
         subtitleLabel?.text = "Subtitle text Subtitle text Subtitle text Subtitle text Subtitle text Subtitle text Subtitle text Subtitle text Subtitle text Subtitle text Subtitle text Subtitle text Subtitle text Subtitle text"
     }
     
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        if let title = titleLabel {
+            title.preferredMaxLayoutWidth = title.bounds.width
+        }
+        if let subtitle = subtitleLabel {
+            subtitle.preferredMaxLayoutWidth = subtitle.bounds.width
+        }
+    }
+    
     override func sizeThatFits(_ size: CGSize) -> CGSize {
-        return self.systemLayoutSizeFitting(UILayoutFittingCompressedSize)
+        return systemLayoutSizeFitting(UILayoutFittingCompressedSize)
     }
 }

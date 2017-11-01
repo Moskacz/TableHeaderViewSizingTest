@@ -22,7 +22,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Svd-gx-Nhz">
-                    <rect key="frame" x="8" y="52" width="354" height="355"/>
+                    <rect key="frame" x="8" y="37" width="354" height="370"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -30,7 +30,7 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="Svd-gx-Nhz" firstAttribute="top" secondItem="dVV-Ds-afh" secondAttribute="bottom" constant="23" id="F0N-Wi-VJB"/>
+                <constraint firstItem="Svd-gx-Nhz" firstAttribute="top" secondItem="dVV-Ds-afh" secondAttribute="bottom" constant="8" id="F0N-Wi-VJB"/>
                 <constraint firstItem="dVV-Ds-afh" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="QcV-Uo-FQC"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Svd-gx-Nhz" secondAttribute="trailing" constant="8" id="Yu6-Hy-fSi"/>
                 <constraint firstItem="dVV-Ds-afh" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="jRw-z0-uqb"/>

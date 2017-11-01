@@ -24,7 +24,11 @@ class ViewController: UIViewController {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
+        tableView?.beginUpdates()
+        tableView?.tableHeaderView?.setNeedsLayout()
+        tableView?.tableHeaderView?.layoutIfNeeded()
         tableView?.tableHeaderView?.sizeToFit()
+        tableView?.endUpdates()
     }
 }
 
